@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NATRIL NATURALS - Launching Soon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Dark overlay for better text contrast -->
+        <div class="overlay"></div>
+
+        <!-- Background Pattern -->
+        <div class="background-pattern"></div>
+
+        <!-- Floating Leaves Animation -->
+        <div class="floating-leaves" id="floatingLeaves"></div>
+
+        <!-- Sound Toggle -->
+        <div class="sound-toggle">
+            <button id="soundToggle" class="sound-btn" title="Play ambient sounds">
+                <svg class="sound-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                    <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+                </svg>
+            </button>
+            <audio id="ambientSound" loop muted>
+                <source src="https://www.soundjay.com/misc/sounds/birds-chirping-1.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="content-wrapper">
+                
+                <!-- Plant Growth Animation -->
+                <div class="plant-growth">
+                    <div class="plant-container">
+                        <div class="plant" id="plant">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M7 20h10"></path>
+                                <path d="M10 20c5.5-2.5.8-6.4 3-10"></path>
+                                <path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"></path>
+                                <path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.7 4.3-1.4 1-1.1 1.6-2.7 1.7-4.9-2.7.1-4 1-4.9 2.3z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="soil"></div>
+                </div>
+
+                <!-- Logo/Brand Name -->
+                <div class="brand-section">
+                    <div class="brand-title">
+                        <svg class="leaf-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+                            <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+                        </svg>
+                        <img src="natril logo.png" alt="Natril Naturals Logo" class="brand-logo" style="height:100px; margin: 0 12px;">
+                        <svg class="leaf-icon leaf-flipped" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+                            <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+                        </svg>
+                    </div>
+                    <h3 class="subtitle">If you truly love nature, you will find beauty everywhere.</h3>
+                </div>
+
+                <!-- Subtitle -->
+                <p class="description">Launching our pure and organic journey soon...</p>
+
+                <!-- Countdown Timer -->
+                <div class="countdown-section">
+                    <h3 class="coming-soon">Coming Soon</h3>
+                    <div class="countdown-timer" id="countdown">
+                        <div class="time-card">
+                            <div class="time-value" id="days">00</div>
+                            <div class="time-label">DAYS</div>
+                        </div>
+                        <div class="time-card">
+                            <div class="time-value" id="hours">00</div>
+                            <div class="time-label">HOURS</div>
+                        </div>
+                        <div class="time-card">
+                            <div class="time-value" id="minutes">00</div>
+                            <div class="time-label">MINUTES</div>
+                        </div>
+                        <div class="time-card">
+                            <div class="time-value" id="seconds">00</div>
+                            <div class="time-label">SECONDS</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Email Signup -->
+                <div class="email-section">
+                    <h3 class="notify-title">Notify me when we launch!</h3>
+                    <div class="email-signup" id="emailSignup">
+                        <form class="email-form" id="emailForm">
+                            <div class="input-container">
+                                <svg class="mail-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                <input type="email" id="emailInput" placeholder="Enter your email address" required>
+                            </div>
+                            <button type="submit" class="notify-btn" id="notifyBtn">
+                                <span class="btn-text">Notify Me</span>
+                                <div class="loading-spinner" style="display: none;">
+                                    <div class="spinner"></div>
+                                    <span>Joining...</span>
+                                </div>
+                            </button>
+                        </form>
+                        <p class="email-note">Join our organic community and be the first to know! 🌿</p>
+                    </div>
+                    
+                    <!-- Success Message -->
+                    <div class="success-message" id="successMessage" style="display: none;">
+                        <svg class="bell-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path>
+                            <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path>
+                        </svg>
+                        <h3>You're all set! 🌱</h3>
+                        <p>We'll notify you as soon as we launch our organic journey.</p>
+                    </div>
+                </div>
+
+                <!-- Features Preview -->
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+                                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+                            </svg>
+                        </div>
+                        <h4>100% Organic</h4>
+                        <p>Pure, natural ingredients sourced responsibly</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+                                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+                            </svg>
+                        </div>
+                        <h4>Eco-Friendly</h4>
+                        <p>Sustainable packaging and practices</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+                                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+                            </svg>
+                        </div>
+                        <h4>Premium Quality</h4>
+                        <p>Carefully crafted for your wellness</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-line"></div>
+                <p class="footer-text">Join our organic community and be the first to know! ✨</p>
+                <div class="footer-brand">
+                    <svg class="footer-leaf" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+                        <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+                    </svg>
+                    <span>© 2024 Natril Naturals. Nature's finest awaits.</span>
+                    <svg class="footer-leaf footer-leaf-flipped" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+                        <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+                    </svg>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
